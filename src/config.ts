@@ -35,6 +35,49 @@ Do NOT use for simple web search -- use web_search_query. Do NOT use for single 
         },
         required: ["topic"],
       },
+      outputSchema: {
+          "type": "object",
+          "properties": {
+            "topic": {
+              "type": "string",
+              "description": "Research topic"
+            },
+            "depth": {
+              "type": "string",
+              "description": "Research depth level"
+            },
+            "sourcesAnalyzed": {
+              "type": "number",
+              "description": "Number of sources analyzed"
+            },
+            "report": {
+              "type": "string",
+              "description": "Generated research report in markdown"
+            },
+            "sources": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "title": {
+                    "type": "string"
+                  },
+                  "url": {
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "timestamp": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "topic",
+            "report",
+            "sources"
+          ]
+        },
     },
   ],
 };
