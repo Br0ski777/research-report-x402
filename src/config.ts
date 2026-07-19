@@ -9,7 +9,7 @@ export const API_CONFIG: ApiConfig = {
     {
       method: "POST",
       path: "/api/report",
-      price: "$0.02",
+      price: "$0.06",
       description: "Generate a research report on a given topic",
       toolName: "research_generate_report",
       toolDescription: "Use this when you need a comprehensive research report on any topic. Accepts a topic and optional depth parameter. Fetches multiple web sources, extracts key information, and compiles a structured report with summary, key findings, sources, and analysis. Returns markdown-formatted report. Do NOT use for simple web search — use web_search_query instead. Do NOT use for single page scraping — use web_scrape_to_markdown instead. Do NOT use for SEO analysis — use seo_audit_page instead.",
