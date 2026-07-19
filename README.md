@@ -37,7 +37,7 @@ Any x402-aware client ([`@x402/fetch`](https://www.npmjs.com/package/@x402/fetch
 
 | Tool | Method | Path | Price | Description |
 |---|---|---|---|---|
-| `research_generate_report` | POST | `/api/report` | $0.02 | Generate a research report on a given topic |
+| `research_generate_report` | POST | `/api/report` | $0.06 | Generate a research report on a given topic |
 
 ### `research_generate_report`
 
